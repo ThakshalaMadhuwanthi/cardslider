@@ -1,0 +1,80 @@
+
+
+body{
+    background-image: 
+    linear-gradient(
+       to top right,#47c7d8,#f4e3ec
+    );   
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    font-family:monospace ;
+   }
+
+   .header{
+    width: 100%;
+    text-align: center;
+    background-color: transparent;
+    padding: 30px 0;
+    margin: 0%;
+    font-size: 40px;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: .15em solid none; 
+    animation: typing 5s steps(30, end) infinite, cursor .75s step-end infinite;
+}
+   
+   .slider{
+       position: relative;
+       width: 100%;
+       height: 370px;
+       overflow: hidden;
+   }
+   
+   .item{
+       position: absolute;
+       width: 200px;
+       height: 320px;
+       text-align: justify;
+       background-color: #FFF;
+       border-radius: 10px;
+       padding: 20px;
+       transition: 0.5s;
+        left: calc(50% - 110px);
+        top: 0;
+   
+   }
+   #next,#prev{
+       position: absolute;
+       top: 30%;
+       color: #03010b;
+       background-color: transparent;
+       border: none;
+       font-size: 60px;
+       font-family: monospace;
+       font-weight: bold;
+       left: 50px;
+   
+   
+   }
+   #next{
+       left: unset;
+       right: 50px;
+   }
+   #photo1,#photo2,#photo3,#photo4,#photo5,#photo6,#photo7{
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+   }
+   @keyframes cursor{
+    50%{ border-color: transparent;}
+   }
+   @keyframes typing {
+    from{width: 0;}
+    to{ width: 100%;}
+   }
+   
+   
